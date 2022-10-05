@@ -28,8 +28,4 @@ public class SmartLogger {
     public static void logStep(int stepNumber, String message) {
         getLogger().info(String.format("STEP №%d: %s", stepNumber, message));
     }
-
-    public static void logWarn(String message) {
-        getLogger().warn("WARN: " + message);
-    }
 }

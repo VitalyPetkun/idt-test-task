@@ -5,6 +5,7 @@ import io.restassured.response.ValidatableResponse;
 public class Response {
 
     private int status;
+
     private String body;
 
     protected Response(ValidatableResponse validatableResponse) {

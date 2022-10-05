@@ -18,4 +18,8 @@ public enum StackExchangeParameters {
     public String getParameter(String value) {
         return parameter.concat(value).concat("&");
     }
+
+    public String getFilter(String value) {
+        return parameter.concat(value);
+    }
 }
