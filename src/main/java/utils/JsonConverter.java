@@ -17,7 +17,7 @@ public class JsonConverter {
     }
 
     private static Gson getGson() {
-        if(gson == null)
+        if (gson == null)
             new JsonConverter();
         return gson;
     }
@@ -32,7 +32,7 @@ public class JsonConverter {
         List<T> list = new ArrayList<>();
         JsonArray jsonArray = JsonParser.parseString(jsonString).getAsJsonArray();
 
-        for (JsonElement jsonElement:jsonArray) {
+        for (JsonElement jsonElement : jsonArray) {
             list.add(getObject(jsonElement.toString(), cls));
         }
 

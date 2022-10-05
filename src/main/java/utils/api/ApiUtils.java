@@ -7,7 +7,8 @@ import static io.restassured.RestAssured.*;
 
 public class ApiUtils {
 
-    private ApiUtils() {}
+    private ApiUtils() {
+    }
 
     public static void setupBaseUri(String currentBaseUri) {
         SmartLogger.logInfo("Setup baseUri");
